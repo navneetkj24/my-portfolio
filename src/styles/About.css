@@ -1,0 +1,40 @@
+/* ===== About Section ===== */
+.about-section {
+    padding: 5rem 2rem;          /* top-bottom and left-right padding */
+    background-color: #f3f4f6;   /* optional light gray background */
+    font-family: 'Georgia', serif;
+    max-width: 1000px;
+    margin: 0 auto;              /* centers the section */
+    text-align: center;          /* centers text */
+}
+
+/* Section title */
+.about-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #111827;              /* dark gray */
+}
+
+/* Paragraph text */
+.about-section .about-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #374151;              /* medium gray */
+    margin-bottom: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 3rem 1rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section .about-text {
+        font-size: 0.95rem;
+    }
+}

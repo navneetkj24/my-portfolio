@@ -1,0 +1,158 @@
+﻿/* ===== Contact Section ===== */
+.contact-section {
+    padding: 5rem 2rem;
+    background-color: #f3f4f6;
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center; /* center the card horizontally */
+}
+
+/* Contact Card (same style as projects-card) */
+.contact-card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .contact-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+
+    /* Section title */
+    .contact-card h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #111827;
+        text-align: center;
+    }
+
+    /* Intro text */
+    .contact-card .intro-text {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #374151;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+/* Contact container (info + form) */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; /* center items inside the card */
+}
+
+/* Contact info */
+.contact-info {
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+    .contact-info a {
+        color: #0077ff;
+        text-decoration: none;
+    }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+/* Contact form (white card inside contact card) */
+.contact-form {
+    background: #f9fafb; /* slightly lighter than main card */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+}
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 1rem;
+        outline: none;
+        transition: all 0.3s ease;
+        background: #fff;
+    }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #0077ff;
+            box-shadow: 0 0 8px rgba(0, 119, 255, 0.2);
+        }
+
+    .contact-form button {
+        width: 100%;
+        padding: 14px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background: linear-gradient(135deg, #0077ff, #005fcc);
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+
+        .contact-form button:hover {
+            background: linear-gradient(135deg, #005fcc, #003e99);
+            transform: translateY(-2px);
+        }
+
+/* Form two-column row */
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+    .form-row > div {
+        flex: 1;
+    }
+
+/* Status messages */
+.success-msg {
+    margin-top: 10px;
+    color: green;
+    font-weight: 600;
+}
+
+.error-msg {
+    margin-top: 10px;
+    color: red;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .contact-container {
+        flex-direction: row;
+        justify-content: space-between; /* space evenly inside the card */
+    }
+
+    .contact-info {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .contact-form {
+        flex: 1;
+        max-width: 500px;
+    }
+}

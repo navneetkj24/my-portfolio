@@ -1,0 +1,57 @@
+/* Common section styling */
+section {
+	background: transparent; /* makes body background visible */
+}
+	
+
+	.section:nth-child(even) {
+		background-color: #f3f4f6; /* alternate background */
+	}
+
+/* Card styling */
+
+
+/* Italic text */
+.italic-text {
+	font-style: italic;
+	font-size: 0.95rem;
+	line-height: 1.7;
+	color: #374151;
+	margin-bottom: 1rem;
+}
+
+/* Left / Right alignment */
+.left-section {
+	justify-content: flex-start;
+}
+
+.right-section {
+	justify-content: flex-end;
+}
+
+/* Links */
+.link {
+	color: #3b82f6;
+	text-decoration: none;
+}
+
+	.link:hover {
+		text-decoration: underline;
+	}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.section {
+		justify-content: center;
+		padding: 3rem 1rem;
+	}
+
+	.card {
+		max-width: 90%;
+		text-align: center;
+	}
+
+		.card h2 {
+			font-size: 1.5rem;
+		}
+}

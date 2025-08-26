@@ -1,0 +1,77 @@
+/* ===== Projects Section ===== */
+.projects-section {
+    padding: 5rem 2rem;
+    background-color: #f3f4f6; /* light gray background */
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* White card like About/Skills */
+.projects-card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .projects-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+
+    /* Section title */
+    .projects-card h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: #111827;
+        text-align: center;
+    }
+
+    /* Description text */
+    .projects-card .about-text {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #374151;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+/* Projects list */
+
+/* Individual project item */
+.project-item {
+    padding: 1rem;
+    background: #f9fafb; /* slightly lighter gray inside the card */
+    border-radius: 0.75rem;
+}
+
+    .project-item h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #111827;
+    }
+
+    .project-item p {
+        font-size: 1rem;
+        color: #374151;
+        line-height: 1.6;
+    }
+
+/* Responsive: horizontal layout on larger screens */
+@media (min-width: 768px) {
+    .projects-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .project-item {
+        flex: 1;
+        margin: 0 0.5rem;
+    }
+}

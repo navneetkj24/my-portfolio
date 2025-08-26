@@ -1,0 +1,135 @@
+﻿/* Navbar base */
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: #1f2937; /* Tailwind gray-800 fallback */
+  border-bottom: 1px solid #374151; /* Tailwind gray-700 */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Links underline effect */
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* ensures full width */
+    z-index: 50;
+    background-color: #1f2937; /* dark gray */
+    border-bottom: 2px solid #3b82f6; /* blue border at bottom */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+    /* remove padding from nav itself, keep it inside the container */
+    nav .container {
+        padding: 0 1.5rem; /* optional: horizontal padding */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:  15px; /* optional height */
+
+    }
+    nav ul {
+        display: flex;
+        gap: 2rem; /* space between links */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* Navbar links */
+    nav ul {
+        display: flex;
+        gap: 40px; /* space between links */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li a {
+            position: relative;
+            text-decoration: none;
+            color: #ffffff; /* white links */
+            font-weight: 500;
+            padding: 0.5rem 0.75rem;
+            transition: color 0.3s;
+        }
+
+            nav ul li a:hover {
+                color: #3b82f6; /* blue on hover */
+            }
+
+            /* Underline animation */
+            nav ul li a::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                width: 100%;
+                height: 2px;
+                background-color: #3b82f6; /* blue underline */
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.3s ease;
+            }
+
+            nav ul li a:hover::after {
+                transform: scaleX(1);
+            }
+
+/* Mobile menu button container */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* hide desktop links */
+    }
+
+    .mobile-menu {
+        display: flex;
+        background-color: #1f2937; /* dark background */
+        padding: 1rem 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+        .mobile-menu li a {
+            color: #ffffff; /* white links for mobile too */
+            font-weight: 500;
+        }
+
+            .mobile-menu li a:hover {
+                color: #3b82f6;
+            }
+}

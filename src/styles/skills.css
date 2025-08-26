@@ -1,0 +1,42 @@
+/* Skills Section without card */
+.skills-section {
+    padding: 5rem 2rem;
+    background-color: #f3f4f6; /* light gray background, optional */
+    font-family: 'Georgia', serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+    /* Title */
+    .skills-section h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: #111827;
+        text-align: center;
+    }
+
+    /* Text inside skills */
+    .skills-section .italic-text {
+        font-style: italic;
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #374151;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 3rem 1rem;
+    }
+
+        .skills-section h2 {
+            font-size: 1.5rem;
+        }
+
+        .skills-section .italic-text {
+            font-size: 0.95rem;
+        }
+}
