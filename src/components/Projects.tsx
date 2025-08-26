@@ -9,7 +9,7 @@ export default function Projects() {
                 <h2>My Projects</h2>
 
                 <p className="about-text">
-                    Here are some projects I've built to strengthen my skills in software development and IT infrastructure.
+                    Here are some projects I&apos;ve built to strengthen my skills in software development and IT infrastructure.
                 </p>
 
                 <div className="projects-container">

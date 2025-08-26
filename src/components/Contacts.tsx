@@ -32,7 +32,7 @@ export default function Contact() {
             <div className="contact-card">
                 <h2>Contact Me</h2>
                 <p className="intro-text">
-                    I'm always open to new opportunities and collaborations. Reach out to me using the form or the links below.
+                    I&apos;m always open to new opportunities and collaborations. Reach out to me using the form or the links below.
                 </p>
 
                 <div className="contact-container">
