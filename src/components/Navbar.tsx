@@ -36,7 +36,7 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-center">
         <ul className="flex gap-12 font-medium text-white">
           <li className="px-3 py-2 hover:text-blue-400 transition-colors duration-200">
-            <Link href="#hero">Hero</Link>
+            <Link href="#hero">Main</Link>
           </li>
           <li className="px-3 py-2 hover:text-blue-400 transition-colors duration-200">
             <Link href="#about">About</Link>
